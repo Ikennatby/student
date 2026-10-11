@@ -1,0 +1,26 @@
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+build/
+.vercel/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Local database
+db.sqlite3
+
+# Logs and OS files
+*.log
+.DS_Store
