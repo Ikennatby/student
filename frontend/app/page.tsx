@@ -109,7 +109,8 @@ export default function Home() {
               {pendingTasks}
             </p>
           </div>
-          <div className="rounded-xl bg-white p-6 shadow">
+          <div className="rounded-xl bg-white
+           p-6 shadow">
             <p className="text-sm font-medium text-black-500">
               Completed Tasks
             </p>
