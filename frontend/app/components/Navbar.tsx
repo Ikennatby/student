@@ -6,7 +6,7 @@ export default function Navbar() {
           TaskTracker
         </h1>
 
-        <span className="text-sm text-gray-500">
+        <span className="text-xl font-bold text-gray-500">
           Student Dashboard
         </span>
       </div>

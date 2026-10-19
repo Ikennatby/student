@@ -21,15 +21,15 @@ export default function TaskCard({
         <h3
           className={`text-lg font-semibold ${
             completed
-              ? "text-gray-400 line-through"
-              : "text-gray-900"
+              ? "text-black line-through"
+              : "text-black"
           }`}
         >
           {task.title}
         </h3>
 
         {task.description && (
-          <p className="mt-1 text-gray-600">
+          <p className="mt-1 text-back">
             {task.description}
           </p>
         )}

@@ -1,4 +1,6 @@
-const API_BASE_URL = "http://127.0.0.1:8000/api";
+const API_BASE_URL = (
+  process.env.NEXT_PUBLIC_API_URL ?? "http://127.0.0.1:8000/api"
+).replace(/\/+$/, "");
 
 export interface Task {
   id: number;
@@ -15,8 +17,7 @@ export type CreateTaskData = {
   deadline: string | null;
   status?: "pending" | "completed";
 };
-
-// Checks whether Django returned a successful response
+ 
 async function handleResponse(response: Response) {
   if (!response.ok) {
     throw new Error(`API request failed: ${response.status}`);

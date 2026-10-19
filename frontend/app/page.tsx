@@ -26,20 +26,25 @@ export default function Home() {
     (task) => task.status === "completed"
   ).length;
 
+  useEffect(() => {
+  let cancelled = false;
+
   async function loadTasks() {
     try {
       const data = await getTasks();
-      setTasks(data);
+      if (!cancelled) setTasks(data);
     } catch (error) {
       console.error("Failed to load tasks:", error);
     } finally {
-      setLoading(false);
+      if (!cancelled) setLoading(false);
     }
   }
 
-  useEffect(() => {
-    loadTasks();
-  }, []);
+  loadTasks();
+  return () => {
+    cancelled = true;
+  };
+}, []);
 
   function handleTaskCreated(task: Task) {
     setTasks((currentTasks) => [task, ...currentTasks]);
