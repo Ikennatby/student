@@ -54,7 +54,7 @@ export default function TaskCard({
       <div className="flex gap-2">
         <button
           onClick={() => onToggle(task)}
-          className="rounded-lg border text-black px-3 py-2 text-sm hover:bg-gray-100"
+          className="rounded-lg border px-3 py-2 text-sm text-black hover:bg-gray-100"
         >
           {completed ? "Mark Pending" : "Complete"}
         </button>
