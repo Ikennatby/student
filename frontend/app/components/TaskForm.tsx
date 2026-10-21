@@ -76,7 +76,7 @@ async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
                 placeholder="Task title"
                 value={title}
                 onChange={(event) => setTitle(event.target.value)}
-                className="w-full rounded-lg border px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500"
+                className="placeholder-gray-400 text-black w-full rounded-lg border px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500"
                 />
 
                 <textarea
@@ -84,7 +84,7 @@ async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
                 value={description}
                 onChange={(event) => setDescription(event.target.value)}
                 rows={3}
-                className="w-full rounded-lg border px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500"
+                className="placeholder-gray-400 text-black w-full rounded-lg border px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500"
                 />
 
                 <div>
@@ -96,7 +96,7 @@ async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
                     type="date"
                     value={deadline}
                     onChange={(event) => setDeadline(event.target.value)}
-                    className="rounded-lg border px-4 py-3 outline-none focus:ring-2 focus ring-blue-500"
+                    className="placeholder-gray-400 text-black rounded-lg border px-4 py-3 outline-none focus:ring-2 focus ring-blue-500"
                     />
                 </div>
                 <button
