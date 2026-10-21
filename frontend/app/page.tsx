@@ -100,7 +100,7 @@ export default function Home() {
         <section className="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
           <div className="rounded-xl bg-white p-6 shadow">
             <p className="text-sm font-medium text-gray-500">
-              Tatal Tasks
+              Total Tasks
             </p>
             <p className="mt-2 text-3xl font-bold text-blue-600">
               {totalTasks}
@@ -116,7 +116,7 @@ export default function Home() {
           </div>
           <div className="rounded-xl bg-white
            p-6 shadow">
-            <p className="text-sm font-medium text-black-500">
+            <p className="text-sm font-medium text-gray-500">
               Completed Tasks
             </p>
             <p className="mt-2 text-3xl font-bold text-green-600">
